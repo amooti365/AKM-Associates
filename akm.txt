@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AKM Associates | Accounting & Advisory</title>
+  <style>
+    :root {
+      --navy: #002B5B;
+      --sky: #4DA8DA;
+      --white: #ffffff;
+      --gray: #333333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      color: var(--gray);
+      background-color: var(--white);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: auto;
+      padding: 0 1rem;
+    }
+
+    header {
+      background-color: var(--navy);
+      color: var(--white);
+      padding: 1rem 0;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .hero {
+      background-color: var(--sky);
+      color: var(--white);
+      padding: 4rem 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      background-color: var(--navy);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #001f3f;
+    }
+
+    .services, #about, #blog, #careers, #contact {
+      padding: 4rem 0;
+    }
+
+    .services {
+      background-color: #f9f9f9;
+    }
+
+    .services h2,
+    #about h2,
+    #blog h2,
+    #careers h2,
+    #contact h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background-color: var(--white);
+      border: 1px solid #ddd;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .section-content {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      background-color: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="images/A_logo_for_AKM_Associates.png" alt="AKM Associates Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Expert Accounting & Advisory Solutions</h1>
+      <p>Partner with AKM Associates to grow, analyze, and future-proof your business.</p>
+      <a href="#contact" class="btn">Book a Consultation</a>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <h3>Accounting & Bookkeeping</h3>
+          <p>Reliable financial recording and compliance reporting.</p>
+        </div>
+        <div class="service-card">
+          <h3>Audit & Assurance</h3>
+          <p>Detailed financial audits tailored to your needs.</p>
+        </div>
+        <div class="service-card">
+          <h3>Payroll Services</h3>
+          <p>Timely and accurate payroll solutions for your team.</p>
+        </div>
+        <div class="service-card">
+          <h3>Tax Planning</h3>
+          <p>Efficient strategies for compliance and savings.</p>
+        </div>
+        <div class="service-card">
+          <h3>Business Advisory</h3>
+          <p>Strategic advice to support growth and stability.</p>
+        </div>
+        <div class="service-card">
+          <h3>Data Analytics</h3>
+          <p>Transform data into actionable business insights.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <div class="section-content">
+        <p>AKM Associates is a trusted accounting and advisory firm dedicated to empowering businesses with financial clarity and strategic insight. With a focus on accuracy, compliance, and growth, we help clients navigate challenges and seize opportunities.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <div class="container">
+      <h2>Insights & News</h2>
+      <div class="section-content">
+        <p>Stay informed with financial news, tax updates, and expert tips from our consultants. Articles coming soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="careers">
+    <div class="container">
+      <h2>Careers</h2>
+      <div class="section-content">
+        <p>We're always looking for talented professionals who are passionate about finance, technology, and client service. Check back for job openings and internship opportunities.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="section-content">
+        <p>Reach out to AKM Associates for consultations, questions, or partnership opportunities.</p>
+        <p>Email: info@akmassociates.com<br>Phone: +123 456 7890</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 AKM Associates. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
